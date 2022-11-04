@@ -1,0 +1,152 @@
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+}
+
+/* banner section styles */
+#banner {
+	background-image: url("/assets/bg-desktop-dark\ 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	display: flex;
+	place-items: center;
+	padding: 3em 1em;
+}
+
+.banner-items {
+	flex: 1;
+	height: max-content;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	letter-spacing: 0.5em;
+	color: #ffffff;
+}
+
+.input {
+	height: 40px;
+	display: flex;
+}
+.input > input {
+	flex: 1;
+	margin: 0;
+	border: none;
+	outline: none;
+	height: 100%;
+	padding: 0 1em 0 3em;
+	background: #25273c;
+	border-radius: 6px 0 0 6px;
+	color: #6c6e83;
+}
+
+.input > input::placeholder {
+	color: #6c6e83;
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.input > button {
+	height: 100%;
+	margin: 0;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	background: #25273c;
+	border-radius: 0 6px 6px 0;
+}
+
+.input > button:hover {
+	cursor: pointer;
+}
+/* todos section styles */
+#todos {
+	flex: 1;
+	background-color: #161622;
+	display: flex;
+	padding: 0 1em 1em 1em;
+}
+
+.todo-items {
+	flex: 1;
+	max-height: 350px;
+	min-height: max-content;
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	top: -25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2px;
+	background: #383a4f;
+}
+
+.todo-items > .todo-list {
+	flex: 1;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.todo-list > .todo-list-item {
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	place-items: center;
+	background-color: #25273c;
+	border-radius: 6px;
+	padding: 1em 0.5em;
+}
+
+.todo-list-item > span {
+	display: flex;
+	gap: 10px;
+}
+
+.todo-list-item > svg {
+	min-width: 16px;
+}
+
+.todo-list-item > svg:hover {
+	cursor: pointer;
+}
+
+.todo-list-item > span > label {
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 100;
+	color: #fff;
+}
+.todo-items > .todo-footer {
+	background-color: #25273c;
+	border-radius: 6px 6px 0 0;
+	padding: 0.25em 2em;
+}
+
+.todo-footer > p {
+	color: #6c6e83;
+	font-size: 12px;
+	line-height: 12px;
+}
