@@ -1,4 +1,4 @@
-# tau-frontend-workshop
+# Frontend-workshop
 A simple todo app built to demonstrate how frontend development works.
 
 This is a hands on interactive session and students would be required to have their computers to follow along. We would cover the following:
